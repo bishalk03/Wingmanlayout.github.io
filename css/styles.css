@@ -1,0 +1,306 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS GLOBAL */
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+/* CSS TOP BAR */
+.top{
+    display: flex;
+    position:sticky;
+    top: 0px;
+    justify-content: space-between;
+    background-color: #001219;
+    flex-wrap: wrap;
+}
+/* NAVBAR */
+.nav-bar{
+    display: flex;
+ 
+    margin-top: 28px;
+    padding-right:  20px; 
+    /* flex-wrap: wrap; */
+}
+.nav-bar ul{
+    display: flex;
+    
+    justify-content: center;
+}
+
+.nav-bar ul li{
+    list-style: none;
+}
+
+.nav-bar ul li a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.nav-bar ul li a:hover{
+    background-color:#012838 ;
+}
+/* LOGO */
+.logo-container{
+    display: flex;
+}
+.logo-name{
+    color: aliceblue;
+    margin: 35px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.logo-img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    border-radius: 80px;
+}
+
+/* HEADER */
+.header{
+    width:100%;
+    height: 450px;
+    background-color: red;
+    background-image: url(../images/tall-vases-with-white-candles-stand-shiny-branches.jpg);
+    background-size: 100% 100%;
+    
+
+
+}
+.header{
+    opacity: 1;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    width:75%;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+#tagline{
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 3px 3px black;
+}
+#company-description{
+    font-size: 2rem;
+    padding:15px;
+    margin: 10px;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+.btn{
+    padding: 16px;
+    margin: 15px;
+    font-size: 25px;
+    background-color: #012838;
+    color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-style: none;
+
+}
+
+.btn:hover{
+    background-color: #0f242c;
+    font-size: 28px ;
+}
+
+/* EVENTS */
+.events-heading{
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    border-bottom: 1px solid rgb(70, 69, 69);
+    
+}
+.primary-heading{
+    text-align: center;
+    margin: 25px;
+    font-size: 40px;
+}
+
+/* THEMES */
+.themes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.item{
+    border:1px solid #001219;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 10px #00121967;
+    transition-property: all;
+    transition-duration: 0.3s;
+    margin-bottom: 10px;
+    border-style: none;
+    
+}
+
+.item:hover{
+    width: 370px;
+    background-color: #001219;
+    border-radius: 25px;
+    color: aliceblue;
+}
+.item h3, p{
+    text-align: center;
+}
+.item h3{
+    padding: 10px;
+    
+}
+.item button{
+    width: 120px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    
+}
+.item button:hover{
+    width: 130px;
+    cursor: pointer;
+}
+
+#party-heading h2{
+    padding-top: 10px;
+}
+
+.reviews{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #005F73;
+    
+
+}
+
+.reviews div{
+    display: flex;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 5px 5px 3px #033641 ;
+    border-radius: 3px;
+    
+    
+
+}
+.reviews div blockquote{
+    padding: 30px;
+    font-size:30px;
+}
+#quote1{
+    background-image: url(../images/footer-background.jpg);
+    color: aliceblue;
+    
+
+}
+#quote2{
+    background-image: url(../images/footer-background\ \(1\).jpg);
+    color: aliceblue;
+}
+
+/* image slider temp */
+.hi-slide{
+    position: relative;
+    width: 754px;
+    height: 292px;
+    border-radius: 50px;
+    margin: 115px auto 0;
+
+}
+
+hi-slide.hi-prev, .hi-slide.hi-next{
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color:aliceblue;
+    color: #0f242c;
+    transition-property: all 0.7s;
+    font-size: 20px;
+}
+
+hi-slide.hi-next:hover,hi-slide.hi-prev:hover{
+    opacity: 1;
+    background-color: aliceblue;
+}
+
+hi-slide.hi-prev{
+    left:59px;
+}
+
+.hi-slide.hi-prev::before{
+    content:'<';
+}
+hi-slide.hi-prev{
+    right:-59px;
+}
+.hi-slide.hi-next::before{
+    content:'>';
+}
+h1-slide>ul{
+    list-style:none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+h1-slide>ul>li{
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 147px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid aliceblue;
+    cursor: pointer;
+    background-color: #333;
+
+}
+
+h1-slide>ul>li>img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
